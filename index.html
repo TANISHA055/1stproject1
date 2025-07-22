@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Spice of South | South Indian Restaurant</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background: linear-gradient(135deg, #fff7e6, #ffe4cc);
+            color: #333;
+            overflow-x: hidden;
+        }
+
+        header {
+            background: #b34700;
+            color: white;
+            padding: 20px 50px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            animation: fadeIn 1.5s ease;
+        }
+
+        header h1 {
+            font-size: 2rem;
+        }
+
+        nav a {
+            color: white;
+            margin-left: 20px;
+            text-decoration: none;
+            font-weight: 500;
+            transition: 0.3s;
+        }
+
+        nav a:hover {
+            color: #ffd699;
+        }
+
+        .hero {
+            text-align: center;
+            padding: 100px 20px;
+            background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('https://images.unsplash.com/photo-1600334129128-3de52fd1d72c');
+            background-size: cover;
+            color: white;
+            animation: fadeIn 2s ease;
+        }
+
+        .hero h2 {
+            font-size: 3rem;
+            margin-bottom: 20px;
+            color: #ffd699;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            color: #ffe6cc;
+        }
+
+        .menu-section {
+            padding: 50px;
+            animation: fadeInUp 1s ease;
+        }
+
+        .menu-section h2 {
+            text-align: center;
+            margin-bottom: 30px;
+            color: #b34700;
+            font-size: 2rem;
+        }
+
+        .menu-card {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 20px;
+            justify-items: center;
+        }
+
+        .item {
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            overflow: hidden;
+            width: 220px;
+            transition: 0.4s;
+            cursor: pointer;
+        }
+
+        .item img {
+            width: 100%;
+            height: 150px;
+            object-fit: cover;
+            transition: 0.3s;
+        }
+
+        .item:hover {
+            transform: translateY(-5px);
+        }
+
+        .item:hover img {
+            filter: brightness(1.1);
+        }
+
+        .item-content {
+            padding: 15px;
+            text-align: center;
+        }
+
+        .item-content h4 {
+            color: #b34700;
+            margin-bottom: 5px;
+        }
+
+        .item-content p {
+            font-size: 0.9rem;
+            color: #555;
+        }
+
+        .item-content span {
+            display: block;
+            margin-top: 10px;
+            color: #d2691e;
+            font-weight: bold;
+        }
+
+        footer {
+            background: #b34700;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 50px;
+        }
+
+        @keyframes fadeIn {
+            0% {opacity: 0;}
+            100% {opacity: 1;}
+        }
+
+        @keyframes fadeInUp {
+            0% {opacity: 0; transform: translateY(30px);}
+            100% {opacity: 1; transform: translateY(0);}
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Spice of South</h1>
+        <nav>
+            <a href="#menu">Menu</a>
+            <a href="#about">About</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <h2>Authentic South Indian Flavours</h2>
+        <p>Experience the taste of tradition with every bite.</p>
+    </section>
+
+    <section class="menu-section" id="menu">
+        <h2>Our Special Menu</h2>
+        <div class="menu-card">
+            <div class="item">
+                <img src="https://source.unsplash.com/220x150/?idli" alt="Idli">
+                <div class="item-content">
+                    <h4>Idli Sambar</h4>
+                    <p>Soft steamed rice cakes served with sambar.</p>
+                    <span>₹80</span>
+                </div>
+            </div>
+            <div class="item">
+                <img src="https://source.unsplash.com/220x150/?dosa" alt="Dosa">
+                <div class="item-content">
+                    <h4>Masala Dosa</h4>
+                    <p>Crispy dosa with potato masala & chutneys.</p>
+                    <span>₹120</span>
+                </div>
+            </div>
+            <div class="item">
+                <img src="https://source.unsplash.com/220x150/?vada" alt="Vada">
+                <div class="item-content">
+                    <h4>Medu Vada</h4>
+                    <p>Fried lentil doughnuts served with chutney.</p>
+                    <span>₹90</span>
+                </div>
+            </div>
+            <div class="item">
+                <img src="https://source.unsplash.com/220x150/?uttapam" alt="Uttapam">
+                <div class="item-content">
+                    <h4>Onion Uttapam</h4>
+                    <p>Soft uttapam topped with onions & chillies.</p>
+                    <span
